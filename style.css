@@ -1,0 +1,282 @@
+/*================== Import Google Fonts =================*/
+@import url("https://fonts.googleapis.com/css?family=Montserrat:500,700|Open+Sans");
+
+/*================== VARIABLES CSS =================*/
+:root {
+    /*========== Colors ==========*/
+    --body-color: #fafafa;
+    --nav-color: #252523;
+    --footer-color: #2c2c2c;
+    --title-color: #2e2e2e;
+    --text-color: #2e2d2d;
+    --text-link: #2778d4;
+    --icon-color: #252525;
+
+    /*========== Font and typography ==========*/
+    --normal-font-size: 1rem;
+    --medium-font-size: .938rem;
+    --small-font-size: .75rem;
+
+    /*========== Font weight ==========*/
+    --font-small: 300;
+    --font-semi-medium: 400;
+    --font-medium: 500;
+    --font-semi-large: 600;
+    --font-large: 700;
+}
+/*================== General =================*/
+*,
+*::before,
+*::after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+
+body {
+    font-family: 'Open Sans', Verdana, sans-serif;
+    background-color: var(--body-color);
+    padding: 0px;
+    margin: 0px;
+    overflow-x: hidden; }
+
+img {
+    width: 100%;
+    height: auto;
+    transition: 0.3s; }
+
+img:hover { 
+    cursor: pointer;
+    opacity: 0.7; }
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins','Montserrat', sans-serif;
+    font-weight: var(--font-large);
+    color: var(--title-color); }
+
+p {
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-medium);
+    line-height: 1.6;
+    color: var(--text-color);
+    text-align: justify;
+    margin-bottom: 10px; } 
+
+ul, li {
+    margin: 2px;
+    list-style: none; }
+
+ol {
+    margin: 2px; }
+    
+main {
+    overflow: auto;
+    padding: 5px 20px 10px 20px;
+    margin: 4px; }
+
+.container {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto; }
+
+.col-4 {
+    max-width: 33.33%; float: left; flex: 33.33%; padding: 0px 4px; }
+.col-6 {
+    max-width: 50%; float: left; flex: 50%; padding: 0 4px; }
+.col-8 {
+    max-width: 66.66%; float: left; flex: 66.66%; padding: 0 4px; }
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0px 4px; }
+
+/*================== Header =================*/
+header {
+    padding: 8px;
+    margin-top: 20px; }
+
+.header-title { 
+    position: relative;
+    font-weight: var(--font-semi-large);
+    color: var(--title-color);
+    text-align: center; }
+
+.header-title hr {
+    width: 30%; }
+
+/*================== Section =================*/
+section {
+    padding: 1.3rem 5.9rem; }
+
+.section-header {
+    position: relative;
+    text-align: justify;
+    margin-bottom: 20px; }
+
+.section-title {
+    font-size: 2rem;
+    text-transform: uppercase; }
+
+/*================== Gallery =================*/
+#image img {
+    vertical-align: middle;
+    margin-top: 8px; }
+
+.images-text h5 {
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 5px; 
+    margin-top: 15px; }
+
+/*================== Biography =================*/
+article {
+    justify-content: center; 
+    padding: 8px;
+    margin: 12px;}
+
+/*----- Card-Box -----*/
+.card {
+    background-color: #fcfcfc;
+    border-radius: 5px;
+    box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.3);
+    padding: 5px;
+    margin: 4px 10px 20px 10px; }
+
+table {
+    font-size: var(--medium-font-size);
+    font-weight: var(--font-small);
+    border-collapse: collapse; }
+    
+td, th {
+    text-align: left;
+    padding: 2px; }
+
+/*================== Fans =================*/
+#fans {
+    margin-top: 20px; }
+
+.fans {
+    position: relative;
+    margin-top: 20px; }
+
+.fans-quote {
+    text-align: center;
+    color: var(--text-color); }
+
+/*----- Icons -----*/
+.contact-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    margin-top: 10px; }
+
+.contact-detail {
+    font-size: 1.8rem;
+    color: var(--icon-color);
+    padding: 10px;
+    margin: 5px; }
+
+.contact-detail:hover{
+    color: #fabf41; }
+
+/*================== Footer =================*/
+footer {
+    background-color: var(--footer-color);
+    margin-top: 5px; }
+
+.footer-copyright {
+    text-align: center;
+    padding: 5px; }
+
+.copyright-content {
+    padding: 10px 0px; }
+
+.copyright-content h5 {
+    text-align: center;
+    color: #d6d6d6;
+    padding: 0px;
+    margin: 0px }
+
+.copyright-content p {
+    font-size: var(--small-font-size);
+    text-align: center;
+    color: #b3b3b3;
+    padding: 0px;
+    margin: 0px; }
+
+/*============= Media Queries ==============*/
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    h1, h2, h3, h4, h5, h6 {
+        font-weight: var(--font-semi-large); }
+    p {
+        font-weight: var(--font-medium); }
+
+    .col-md-4 {
+        max-width: 33.33%; float: left; flex: 33.33%; padding: 0px 2px; }
+    .col-md-5 {
+        max-width: 41.66%; float: left; flex: 41.66%; padding: 0px 2px; }
+    .col-md-7 {
+        max-width: 58.33%; float: left; flex: 58.33%; padding: 0px 2px; }
+    
+    section {
+        padding: 0.8rem 3.6rem; }
+    .section-title {
+        font-size: 1.3rem;
+        margin-top: 10px; }
+    
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+    h1, h2, h3, h4, h5, h6 {
+        font-weight: var(--font-semi-large); }
+    p {
+        font-size: var(--medium-font-size);
+        font-weight: var(--font-medium); }
+    
+    .col-sm-6 {
+        max-width: 50%; float: left; flex: 50%; padding: 0px; }
+    .col-sm-12 {
+        max-width: 100%; float: left; flex: 100%; padding: 0px; }
+
+    section {
+        padding: 0.4rem; }
+    .section-title {
+        font-size: 1.5rem;
+        font-weight: var(--font-semi-large);
+        margin-top: 10px; }
+
+    .sect-sub-title {
+        font-size: var(--normal-font-size);
+        font-weight: var(--font-semi-large); }
+    
+    header {
+        flex-wrap: wrap;
+        margin-top: 5px; }
+    #title {
+        font-size: 1.7rem;
+        font-weight: var(--font-semi-large); }
+    .header-title hr {
+        width: 85%; }
+    
+    #img-caption {
+        font-size: var(--medium-font-size); }
+
+    .card {
+        box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.3);
+        margin: 4px 10px 10px 10px; }
+
+    article p {
+        padding-top: 8px; }
+    
+    .fans-quote {
+        font-size: var(--medium-font-size); }
+    
+    .contact-links {
+        margin-top: 5px; }
+    .contact-detail {
+        padding: 5px 15px;
+        margin: 0px; }
+
+}
