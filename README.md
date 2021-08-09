@@ -1,7 +1,7 @@
 # homework1-DTS-ITPerbankan
 DTS(Thematic Academy) IT Perbankan
-
 Homework 1 HTML and CSS Mastery: Tribute Didi Kempot
+
 Buatlah sebuah website sederhana tentang seseorang yang kalian kagumi atau diri kalian sendiri.
 1. Hanya boleh menggunakan HTML dan CSS.
 2. Buatlah semenarik mungkin.
